@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выставка Леонардо да Винчи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="slaid1">
+        <div><img
+                src="pic2.png"
+                alt="Выставка"></div>
+        <div class="content">
+            <h6>Выставка Леонардо да Винчи</h6>
+            <p>Погрузитесь в мир величайших произведений искусства Леонардо да Винчи. Узнайте об истории, мастерстве и
+                гениальности одного из самых знаменитых художников всех времен. Присоединяйтесь к нам, чтобы увидеть
+                картины, скульптуры и изобретения, которые потрясли мир!</p>
+            <a href="#formSection">
+                <button>Купить билет</button>
+            </a>
+        </div>
+    </div>
+
+    <section class="artworks-section">
+        <h2>Произведения Леонардо да Винчи</h2>
+        <div class="artworks-container">
+            <div class="artwork-item">
+                <img src="https://avatars.mds.yandex.net/i?id=bdb4b65b8d8e974d4f652a44997de5be-4073140-images-thumbs&n=13"
+                    alt="Спаситель мира">
+                <p>Спаситель мира</p>
+            </div>
+            <div class="artwork-item">
+                <img src="https://avatars.mds.yandex.net/i?id=ed4a4ae5174f2c521b1bb77387a497ecaccc22e6-12146588-images-thumbs&n=13"
+                    alt="Дама с горностаем">
+                <p>Дама с горностаем</p>
+            </div>
+            <div class="artwork-item">
+                <img src="https://avatars.mds.yandex.net/i?id=474057b161dcd32785b5197c17c6b7c7a9f69611ed8cd60b-5234412-images-thumbs&n=13"
+                    alt="Мадонна в скалах">
+                <p>Мадонна в скалах</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="formSection" class="ticket-form-section">
+        <div class="form-container">
+            <h2>Заполните форму для покупки</h2>
+            <form action="#" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="ticket-type">Тип билета:</label>
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="standard">Стандартный</option>
+                    <option value="premium">Премиум</option>
+                    <option value="vip">VIP</option>
+                </select>
+
+                <button type="submit">Оформить покупку</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
